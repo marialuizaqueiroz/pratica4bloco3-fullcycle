@@ -23,5 +23,5 @@ jobs:
           pip install coverage
 
       - name: Executar testes
-  run: |
-    python -m unittest tests/appTest.py -v
+        run: |
+          python -m unittest tests/appTest.py -v
