@@ -22,6 +22,7 @@ jobs:
           pip install flask
           pip install coverage
 
-      - name: Executar testes
+      - name: Executar testes com coverage
         run: |
-          python -m unittest tests/appTest.py -v
+          python -m coverage run -m unittest -v tests/appTest.py
+          python -m coverage report
